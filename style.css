@@ -2,53 +2,42 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: beige;
 }
 
 header {
-    background-color: #333;
+    background-color: green;
     color: #fff;
     text-align: center;
     padding: 1em 0;
 }
-
-nav {
-    background-color: #444;
-    color: #db1717;
-    text-align: center;
-    padding: 0.5em 0;
 }
-
-nav ul {
+nav ul{
     list-style: none;
     padding: 0;
 }
-
-nav ul li {
+nav ul li{
     display: inline;
-    margin: 0 1em;
+    margin-right: 20px;
 }
-
-nav ul li a {
-    color: #3ad826;
+nav ul li a{
+    color: white;
     text-decoration: none;
 }
-.marquee-container {
+marquee-container {
     overflow: hidden;
     white-space: nowrap;
     box-sizing: border-box;
-    width: 100%; /* Adjust as needed */
-    background: grey; /* Background color */
-    color: white; /* Text color */
+    width: 100%; 
+    background: grey; 
+    color: white; 
     padding: 10px;
 }
-
 .marquee {
     display: inline-block;
-    padding-left: 100%; /* Push the text outside the container */
+    padding-left: 75%; 
     animation: marquee 15s linear infinite;
 }
-
 @keyframes marquee {
     0% { transform: translateX(0); }
     100% { transform: translateX(-100%); }
@@ -58,15 +47,6 @@ section {
     max-width: 800px;
     margin: 0 auto;
 }
-
-.project {
-    background-color: #fff;
-    padding: 1em;
-    margin: 1em 0;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
 form {
     display: flex;
     flex-direction: column;
@@ -86,7 +66,7 @@ form input, form textarea {
 form button {
     padding: 0.7em;
     background-color: #333;
-    color:blue;
+    color:green;
     border: none;
     border-radius: 5px;
     cursor: pointer;
