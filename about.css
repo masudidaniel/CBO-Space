@@ -7,58 +7,42 @@ body {
 }
 
 section {
-    padding: 20px;
     background-color: #fff;
-    margin: 20px auto;
-    max-width: 800px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-section img.director-img,
-section img.ExecutiveDirector-img {
-    max-width: 100%;
+.director-img, .Executive-director-img, .Operations-Manager-img {
+    width: 150px;
     height: auto;
-    border-radius: 10px;
+    border-radius: 50%;
+    display: block;
+    margin: 0 auto 10px;
 }
 
 .profile-info {
-    padding: 20px;
+    text-align: center;
 }
 
 .profile-info h2 {
-    font-size: 24px;
-    color: #4CAF50;
+    font-size: 1.5em;
     margin-bottom: 10px;
 }
 
 .profile-info h4 {
-    font-size: 20px;
-    color: #333;
+    font-size: 1.2em;
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
 .profile-info p {
-    font-size: 16px;
+    font-size: 1em;
     line-height: 1.6;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
-#director-1, #director-2 {
-    margin-bottom: 40px;
-}
-
-@media (min-width: 600px) {
-    section {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-    }
-
-    section img.director-img, section img.ExecutiveDirector-img {
-        width: 40%;
-        margin-right: 20px;
     }
 
     .profile-info {
