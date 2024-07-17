@@ -1,52 +1,156 @@
-body {
-    font-family: Arial, sans-serif;
+body{
     margin: 0;
     padding: 0;
-    background-color: beige;
 }
 
-header {
-    background-color: green;
-    color: #fff;
+.social-icons {
+    text-align: right;
+    margin: 20px 0;
+}
+
+.social-icons a {
+    color: white;
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    display: inline-block;
     text-align: center;
-    padding: 1em 0;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
 }
+
+nav {
+    background-color: #069e34; 
+    text-align: center; 
 }
-nav ul{
-    list-style: none;
+
+nav ul {
+    list-style-type: none; 
     padding: 0;
 }
-nav ul li{
-    display: inline;
-    margin-right: 20px;
+
+nav ul li {
+    display: inline; 
+    margin-right: 20px; 
 }
-nav ul li a{
-    color: white;
-    text-decoration: none;
+
+nav ul li a {
+    text-decoration: none; 
+    color: #ffffff; 
+    padding: 10px 20px; 
+    display: inline-block; 
+    transition: background-color 0.3s; 
 }
-marquee-container {
+
+nav ul li a:hover {
+    background-color: #555; 
+}
+
+
+.marquee-container {
     overflow: hidden;
     white-space: nowrap;
     box-sizing: border-box;
-    width: 100%; 
-    background: grey; 
-    color: white; 
+    width: 100%;
+    background: rgb(241, 239, 239);
+    color: rgb(48, 15, 235);
     padding: 10px;
 }
+
 .marquee {
     display: inline-block;
-    padding-left: 75%; 
+    padding-left: 75%;
     animation: marquee 15s linear infinite;
 }
+
 @keyframes marquee {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-100%); }
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
 }
+
+
+#Home {
+    text-align: center; 
+    padding: 20px 0; 
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url('cleaning service.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#content {
+    text-align: center;
+    color: rgb(250, 38, 10);
+    background: rgba(5, 180, 14, 0.5); 
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin: 100px auto;
+}
+
+
+#Home img {
+    width: 75%; 
+    height: auto; 
+    display: block; 
+    margin: 0 auto; 
+    max-width: 100%; 
+    border-radius: 8px; 
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px; 
+}
+
+
 section {
     padding: 2em;
     max-width: 800px;
     margin: 0 auto;
 }
+.services {
+    background-color: #08c932;
+    padding: 30px 0;
+}
+
+.services .small-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.services .features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.services .feature-item {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    max-width: 45%;
+    flex: 1 1 calc(50% - 40px);
+    text-align: center;
+}
+.services .feature-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
 form {
     display: flex;
     flex-direction: column;
@@ -56,17 +160,18 @@ form label {
     margin: 0.5em 0 0.2em;
 }
 
-form input, form textarea {
+form input,
+form text area {
     padding: 0.5em;
     margin-bottom: 1em;
-    border: 1px solid #ccc;
+    border: 1px solid #f9faf9;
     border-radius: 5px;
 }
 
 form button {
     padding: 0.7em;
     background-color: #333;
-    color:green;
+    color: rgb(253, 14, 54); 
     border: none;
     border-radius: 5px;
     cursor: pointer;

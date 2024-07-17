@@ -3,62 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Masudi- Professional in Accounting Services</title>
+    <title>GREENFUTURE TECH SOLUTIONS COMPANY</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
 </head>
+
 <body>
-    <header>
-        <h1>Danie Masudi</h1>
-        <p>Professional Accountant</p>
-    </header>
-    <div class="marquee-container">
-        <div class="marquee">Welcome to my page</div>
+    <header class="center-header"><b>GREENFUTURE TECH SOLUTIONS COMPANY</b></header>
     <nav>
         <ul>
-            <li><a href="#Profile">Profile</a></li>
+            <li><a href="#home">Home</a></li>
             <li><a href="#Services">Services</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="#blog">Blog</a></li>
+            <li><a href="Contact">Contact</a></li>
         </ul>
     </nav>
-        <section id="Profile">
-        <h2>Profile</h2>
-        <p>Hello there! I am Daniel Masudi, a passionate accountant with a knack in accounting and auditing experience</p>
-    </section>
+    <div>
+    <div class="social-icons">
+ <a href="https://wa.me/+254702883425" style="background-color:green;"><i class="fab fa-whatsapp"></i></a>
+  <a href="https://www.facebook.com/profile.php?id=61550666797166&mibextid=ZbWKwL" style="background-color:blue;"><i class="fab fa-facebook-f"></i></a>
+  <a href="tiktok.com/@daniel_masudi"><i class="fab fa-tiktok"></i></a>
+ <a href="https://www.instagram.com/danielmasudi349"><i class="fab fa-instagram"></i></a>
+  <a href="https://x.com/MasudiDaniel"><i class="fab fa-twitter"></i></a>   
+</div>
+    <div class="marquee-container">
+        <div class="marquee">Welcome to GreenFuture Tech Solutions. A one stop solution for waste management and consultancy.</div>
+    </div>      
+          
+<section id="Home">
+    
+    <p><b>GreenFuture Tech Solutions Company strives as a leading waste management Consultancy in Kenya, providing waste management solutions and cleaning services to clients. We are incorporated since 2016 and committed to environment sustainable solutions for a greener future.</b></p>
+</section>
 
-    <section id="services">
+<section id="About">
+    <h2><b>Our Mission</b></h2>
+    <p><b>Dedicated to providing solutions on sustainable waste management and Cleaning services to help protect our planet for future generation</b></p>
+</section>
+
+<section class="services">
+    <div class="small-container">
         <h2>Services</h2>
-        <div class="service">
-            <h3>Service 1</h3>
-            <p>Financial Systems Management and advice</p>
-        </div>
-        <div class="Service">
-            <h3>Services 2</h3>
-            <p>Financial Audits, Analyzing financial Risks and Accounting Records maintenance</p>
-        </div>
- 
-    </section>
+        <section class="features">
+            <div class="feature-item">
+                <h1>Cleaning Services</h1>
+                <img src="cleaning service.jpg" alt="Cleaning Service and Consultancy">
+                <p>We advocate for Cleaning Services Consultancy. We strive to be the leading Consultancy firm in the field of Cleaning Services in Kenya</p>
+            </div>
+                        <div class="feature-item">
+                            <h2>Recycling, reducing and Reusing</h2>
+                            <img src="reduce recyle and reuse.jpeg" alt="Recycling and Reusing">
+                            <p>We have what it takes in terms of expertise guidance on Waste reduction, reccyling and reuse. Together with other partners, we make our environment cleaner and greener for future generations </p>
+                        </div>
+             <div class="feature-item">
+                         <h3>Waste Collection and Disposal</h3>          
+                <img src="waste collection.jpg" alt="Waste Collection and Disposal"> 
+                                    <p>We liase with the waste collection firms in real time collection of waste through the system. This ensures that the wastes are collected whenever there is need from our partners</p>                       
+                                </div>
+    
+                <div class="feature-item">
+                       <h4>Waste Decomposition</h4>                     
+                    <img src="composting 3.jpeg" alt="Waste Decomposition"> 
+                                            <p>We advocate for traditional waste decomposition and environmental friendly techniques. We use the simple heaping method of these wastes and after sometimes we sell the end product to loacl farmers </p>
+                        </div>
+                    </div>
+                </div>
+        </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <form id="contact-form">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+        <section id="financial-support">
+            <h2>Support Us</h2>
+            <p><b>We are committed to making our environment cleaner and greener. However, we need your support to achieve our goals. Your generous contributions will help us enhance our waste management projects and ensure a sustainable future for generations to come.</b></p>
+            <p><b>If you would like to support us financially, please contact us at <a href="mailto:support@greenfuturetech.com">support@greenfuturetech.com</a> or call us at +254702883425. Your contributions are highly appreciated.</b></p>
+        </section>
+    
+<section id="Contact">
+    <h2>Contact Us</h2>
+    <form action="Submit_form.php" method="post">
+    <label for="Name">Name:</label>
+    <input type="text" id="Name" name="name" required>
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email" required>
+    <label for="Phone">Phone:</label>
+    <input type="tel" id="phone" name="Phone">
+    <label for="Message">Message:</label>
+    <textarea id="message" name="message" required></textarea>
+    <label for="Collection"><b>Collection Date:</b></label>
+    <input type="date" id="Collection" name="collection">
+    <button type="submit">Submit</button>
+    </form>
+</section>
+<script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function() {
+        emailjs.init("e1UMcON0EB8g_kNaW"); 
+    })();
+</script>
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+<script type="text/javascript">
+    document.getElementById('contact-form').addEventListener('submit', function(event) {
+        event.preventDefault();
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message" required></textarea>
+               const emailParams = {
+            from_name: this.from_name.value,
+            from_email: this.from_email.value,
+            phone_number: this.phone_number.value,
+            message: this.message.value,
+            reply_to: this.from_email.value 
+        };
 
-            <button type="submit">Send</button>
-        </form>
-    </section>
+        emailjs.send('service_b7euldc', 'template_owo79wr', emailParams)
+            .then(function() {
+                alert('Thank you for contacting us!');
+                document.getElementById('contact-form').reset();
+            }, function(error) {
+                console.log('FAILED...', error);
+                alert('An error occurred. Please try again.');
+            });
+    });
+</script>
+         
+<footer>
+    <h1>GreenFuture Tech Solutions Company</h1>
+           
+    <p>&copy; 2024 GreenFuture Tech Solutions Co Ltd. Your Partner in Waste Management / All rights reserved.</p>
+</footer>
 
-    <footer>
-        <p>&copy; 2024 Daniel Masudi</p>
-    </footer>
-
-    <script src="script.js"></script>
+<script src="scripts.js"></script>
 </body>
 </html>
- 
